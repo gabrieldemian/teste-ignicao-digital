@@ -19,7 +19,7 @@ export default function Disponiveis() {
         <Grid item lg={6} className="firstColumn">
 
         <Grid container alignContent="center">
-          <Grid lg>
+          <Grid item lg>
             <p>
               <strong>#1 </strong>
               Normal 2018
@@ -28,7 +28,7 @@ export default function Disponiveis() {
         </Grid>
 
         <Grid container alignContent="center">
-          <Grid lg>
+          <Grid item lg>
             <p>
               <strong>#2 </strong>
               Normal 2018
@@ -37,7 +37,7 @@ export default function Disponiveis() {
         </Grid>
 
         <Grid container alignContent="center">
-          <Grid lg>
+          <Grid item lg>
             <p>
               <strong>#3 </strong>
               VIP 2018

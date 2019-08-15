@@ -1,5 +1,7 @@
 import React from 'react';
-import { makeStyles, Toolbar, Typography, AppBar, Button, Link } from '@material-ui/core';
+import { makeStyles, Toolbar, Typography, AppBar, Button, Tooltip } from '@material-ui/core';
+import Icon from '@material-ui/core/Icon';
+import IconButton from '@material-ui/core/IconButton';
 
 const setStyles = makeStyles(theme => ({
   button: {
@@ -17,15 +19,21 @@ const setStyles = makeStyles(theme => ({
   
 }));
 
-export default function components() {
+export default function Navbar(props) {
 
   const classes = setStyles();
+  const [icon, setIcon] = React.useState('brightness_3');
+
+  const changeTheme = () => {
+    props.changeType();
+    let t = icon === 'brightness_3' ? 'brightness_7' : 'brightness_3'
+    setIcon(t)
+  }
 
   return (
     <>
-      <AppBar className={classes.appBar} position="initial">
+      <AppBar className={classes.appBar} position="static">
         <Toolbar variant="dense">
-          
           <Typography
             component="h2"
             variant="h5"
@@ -37,10 +45,18 @@ export default function components() {
           </Typography>
 
           <div className={classes.listEnd}>
+
+            <Tooltip title="Mudar de tema" placement="bottom">
+              <IconButton onClick={changeTheme} color="inherit" className={classes.button}>
+                <Icon>{icon}</Icon>
+              </IconButton>
+            </Tooltip>
+
             <p>
               Agostinhocarrara@gmail.com
             </p>
-            <Button className={classes.button}>
+
+            <Button color="inherit" className={classes.button}>
               Sair
             </Button>
           </div>

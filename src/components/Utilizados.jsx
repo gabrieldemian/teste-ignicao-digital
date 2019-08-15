@@ -18,14 +18,14 @@ export default function Utilizados() {
     <Grid container>
       <Grid item lg={7} className="firstColumn">
         <Grid container alignContent="center" className={classes.grid}>
-          <Grid lg>
+          <Grid item lg>
             <p>
               <strong>#1 </strong>
               Normal 2018
             </p>
           </Grid>
 
-          <Grid lg>
+          <Grid item lg>
             <p>
               Denizão Nunes
             </p>
@@ -33,14 +33,14 @@ export default function Utilizados() {
         </Grid>
 
         <Grid container alignContent="center" className={classes.grid}>
-          <Grid lg>
+          <Grid item lg>
             <p>
               <strong>#2 </strong>
               Normal 2018
             </p>
           </Grid>
 
-          <Grid lg>
+          <Grid item lg>
             <p>
               Augusto Santos Carrara
             </p>
@@ -48,14 +48,14 @@ export default function Utilizados() {
         </Grid>
 
         <Grid container alignContent="center" className={classes.grid}>
-          <Grid lg>
+          <Grid item lg>
             <p>
               <strong>#3 </strong>
               VIP 2018
             </p>
           </Grid>
 
-          <Grid lg>
+          <Grid item lg>
             <p>
               Harry Potter
             </p>

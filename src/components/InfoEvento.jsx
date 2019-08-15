@@ -56,7 +56,7 @@ export default function InfoEvento() {
       </Grid>
 
       <Grid item lg={4}>
-        <div style={{width: '100%'}}><iframe width="100%" height="277px" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=-15.806541307920613, -47.88983345031738&amp;q=+(Igni%C3%A7%C3%A3o)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">find my coordinates</a></iframe></div><br />
+        <div style={{width: '100%'}}><iframe width="100%" height="277px" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=-15.806541307920613, -47.88983345031738&amp;q=+(Igni%C3%A7%C3%A3o)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"><a href="https://www.maps.ie/coordinates.html">find my coordinates</a></iframe></div><br />
         <Grid container justify="flex-end" alignItems="flex-end" direction="column">
           <a href="">Abrir no maps</a>
           <a href="">Adicionar no Google calendar</a>

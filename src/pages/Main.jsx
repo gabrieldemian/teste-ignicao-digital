@@ -21,7 +21,7 @@ function TabPanel(props) {
   );
 }
 
-export default function Main() {
+export default function Main(props) {
 
   const [value, setValue] = React.useState(0);
 
@@ -39,7 +39,7 @@ export default function Main() {
 
   return (
     <>
-    <Navbar />
+    <Navbar changeType={props.changeType} />
 
     <Container maxWidth="md">
 
